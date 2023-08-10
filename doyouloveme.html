@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doyouloveme</title>
+  <script type="text/javascript">
+    function next(){
+      alert("Yeahhhh... Me too");
+    }
+    function no(){
+      let x = Math.round(Math.random()*window.innerWidth);
+      let y = Math.round(Math.random()*window.innerHeight);
+      document.getElementById("btnNo").style.left = x+'px';
+      document.getElementById("btnNo").style.top = y + 'px';
+    }
+
+  </script>
+</head>
+<body>
+<h2 style="position:absolute; left:220px; top:175px;" >Bae!
+  <br>Do You Love Me</h2>
+<input type="button" value=" Yes " onclick="next()"  style="position:absolute; left:400px; top:220px">
+<input type="button" id="btnNo" value="  No " onmouseover="no()" style="position: absolute;left: 450px; top: 220px;" >
+
+</body>
+</html>
